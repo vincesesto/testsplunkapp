@@ -1,0 +1,11 @@
+---
+- hosts: local
+
+  tasks:
+  - name: install ansible splunk app
+    copy: 
+      src: ansible_answers_app 
+      dest: /opt/splunk/etc/apps/
+      owner: splunk
+      group: splunk
+
